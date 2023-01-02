@@ -42,6 +42,15 @@
                 "focus": true, //这个就设置为true了，运行任务后将焦点聚集到终端，方便进行输入
                 "panel": "new"
             }
+        },
+        {
+            "label": "remove-exe",
+            "type": "shell",
+            "command": "Remove-Item",
+            "args": [
+                "${fileDirname}\\*.exe",
+            ],
+            "problemMatcher": [],
         }
     ]
 }
