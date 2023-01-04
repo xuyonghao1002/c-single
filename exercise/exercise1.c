@@ -42,17 +42,33 @@ int int_inversion(int num)
 	return ret;
 }
 
+// 求两个数的最大公约数
+int get_gcd(int a, int b)
+{
+	/*
+	辗转相除法
+	1. 如果b等于0，计算结束，a就是最大公约数
+	2. 计算a除以b的余数，让a等于b，b等于那个余数，回到第一步
+
+	a  b  t
+	12 18 12
+	18 12 6
+	12 6  0
+	6  0
+	*/
+	int t = 1;
+	while (b != 0)
+	{
+		t = a % b;
+		a = b;
+		b = t;
+	}
+	return a;
+}
+
 int main(int argc, char const *argv[])
 {
-	int n;
-	scanf("%d", &n);
-	int fact = 1;
-	for (size_t i = 1; i <= n; i++)
-	{
-		fact *= i;
-	}
 	
-	printf("%d!=%d\n", n, fact);
 	
 	
 	system("pause");
