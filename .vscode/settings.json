@@ -3,6 +3,8 @@
         "pthread.h": "c",
         "lua.h": "c",
         "lualib.h": "c",
-        "lauxlib.h": "c"
+        "lauxlib.h": "c",
+        "socket.h": "c",
+        "sockaddr.h": "c"
     }
 }
