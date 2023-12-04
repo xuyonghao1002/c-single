@@ -1,3 +1,7 @@
+
+// 简单演示线程的使用
+// 线程的创建 退出 等待线程结束
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <pthread.h>

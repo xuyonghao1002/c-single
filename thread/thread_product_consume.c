@@ -1,3 +1,7 @@
+
+// 用两个线程模拟 生产者和消费者
+// 用了一个互斥锁和一个条件变量 来实现同步机制
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <pthread.h>

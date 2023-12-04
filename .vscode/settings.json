@@ -5,6 +5,14 @@
         "lualib.h": "c",
         "lauxlib.h": "c",
         "socket.h": "c",
-        "sockaddr.h": "c"
+        "sockaddr.h": "c",
+        "errno.h": "c",
+        "epoll.h": "c",
+        "sigset_t.h": "c",
+        "stdint.h": "c",
+        "types.h": "c",
+        "string.h": "c",
+        "stdio.h": "c",
+        "typeinfo": "c"
     }
 }

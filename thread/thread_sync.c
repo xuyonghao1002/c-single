@@ -5,6 +5,9 @@
 
 int i = 0;
 
+// 多线程的同步实现
+// 用了一个互斥锁
+
 pthread_mutex_t mutex;
 
 
