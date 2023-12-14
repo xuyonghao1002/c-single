@@ -1,5 +1,12 @@
-*.so
+# Ignore compiled binaries
 *.exe
 *.out
-.vscode/
+*.app
+*.so
+*.dll
+*.o
 *.
+
+# Ignore executable scripts
+*.sh
+/.vscode/
