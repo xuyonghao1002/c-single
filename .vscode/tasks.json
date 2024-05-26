@@ -51,6 +51,28 @@
                 "${fileDirname}\\*.exe",
             ],
             "problemMatcher": [],
+        },
+        {
+            "label": "wslbuild",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
         }
     ]
 }

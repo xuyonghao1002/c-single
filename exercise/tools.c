@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <time.h>
 
+#define N_VALUES 5
+
 // 计算一个整数的位数
 int cal_digits(int num)
 {
@@ -65,6 +67,47 @@ int get_gcd(int a, int b)
 	}
 	return a;
 }
+
+
+/**
+ * @brief 计算字符串的长度
+ * @param string 要计算长度的字符串
+ * @return 字符串的长度
+ * @note 该函数会遍历输入的字符串，直到遇到'\0'（字符串结束符）为止，并返回字符串的长度
+ */
+size_t strLength(char *string)
+{
+	int length = 0;
+	while (*string++ != '\0')
+	{
+		length++;
+	}
+	return length;	
+}
+
+
+/**
+ * @brief 初始化包含浮点值的数组为零，并打印数值。
+ * 
+ * 该函数使用指针遍历数组，将包含浮点值的数组初始化为零。初始化完成后，打印数组中的值。
+ * 
+ * @note 需要定义 N_VALUES 来指定数组的大小。
+ */
+void initializeAndPrintValue()
+{
+	float values[N_VALUES];
+	float *vp;
+	for (vp = &values[0]; vp < &values[N_VALUES];)
+	{
+		*vp++ = 0;
+	}
+
+	for (size_t i = 0; i < N_VALUES; i++)
+	{
+		printf("%f\t", values[i]);
+	}
+}
+
 
 int main(int argc, char const *argv[])
 {

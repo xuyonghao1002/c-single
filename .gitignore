@@ -9,4 +9,4 @@
 
 # Ignore executable scripts
 *.sh
-/.vscode/
+.vscode/

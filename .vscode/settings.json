@@ -15,6 +15,10 @@
         "stdio.h": "c",
         "typeinfo": "c",
         "byteswap.h": "c",
-        "event.h": "c"
+        "event.h": "c",
+        "tcp.h": "c",
+        "inet.h": "c",
+        "stdlib.h": "c",
+        "time.h": "c"
     }
 }
