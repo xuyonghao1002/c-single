@@ -10,3 +10,5 @@
 # Ignore executable scripts
 *.sh
 .vscode/
+.cmake/build/
+build/

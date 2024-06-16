@@ -19,6 +19,7 @@
         "tcp.h": "c",
         "inet.h": "c",
         "stdlib.h": "c",
-        "time.h": "c"
+        "time.h": "c",
+        "iostream": "cpp"
     }
 }
