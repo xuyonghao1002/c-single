@@ -1,0 +1,11 @@
+cmake_minimum_required(VERSION 3.0)
+project(calctest)
+
+aux_source_directory(./ SRCS)
+include_directories(${HEAD_PATH})
+
+link_directories(${LIB_PATH})
+link_libraries(${CALC_LIB})
+
+set(EXECUTABLE_OUTPUT_PATH ${EXEC_PATH})
+add_executable(${APP_NAME_1} ${SRCS})
